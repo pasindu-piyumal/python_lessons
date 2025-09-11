@@ -1,4 +1,7 @@
 def multiply(*numbers):
-    print(numbers)
+    total = 1
+    for number in numbers:
+        total *= number
+    return total
 
-multiply(2, 3, 4, 5)
+print(multiply(2, 3, 4, 5))
